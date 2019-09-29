@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEFA.ChampionsLeague.Host", "UEFA.ChampionsLeague.Host\UEFA.ChampionsLeague.Host.csproj", "{597297E9-B26D-4265-9920-C5B65E337DD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEFA.ChampionsLeague.Business", "UEFA.ChampionsLeague.Business\UEFA.ChampionsLeague.Business.csproj", "{94F8638E-249F-4741-8040-0F39CC73792C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEFA.ChampionsLeague.Data", "UEFA.ChampionsLeague.Data\UEFA.ChampionsLeague.Data.csproj", "{033B4EF8-ECA0-46CD-BFE2-104DF085174F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UEFA.ChampionsLeague.Contracts", "UEFA.ChampionsLeague.Contracts\UEFA.ChampionsLeague.Contracts.csproj", "{B4C967B1-6FCD-4DD8-A30B-EE429432DE24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{597297E9-B26D-4265-9920-C5B65E337DD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{597297E9-B26D-4265-9920-C5B65E337DD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{597297E9-B26D-4265-9920-C5B65E337DD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{597297E9-B26D-4265-9920-C5B65E337DD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F8638E-249F-4741-8040-0F39CC73792C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F8638E-249F-4741-8040-0F39CC73792C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F8638E-249F-4741-8040-0F39CC73792C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F8638E-249F-4741-8040-0F39CC73792C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{033B4EF8-ECA0-46CD-BFE2-104DF085174F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033B4EF8-ECA0-46CD-BFE2-104DF085174F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033B4EF8-ECA0-46CD-BFE2-104DF085174F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033B4EF8-ECA0-46CD-BFE2-104DF085174F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C967B1-6FCD-4DD8-A30B-EE429432DE24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C967B1-6FCD-4DD8-A30B-EE429432DE24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C967B1-6FCD-4DD8-A30B-EE429432DE24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C967B1-6FCD-4DD8-A30B-EE429432DE24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B26B2DA8-3E5A-41FC-8086-1E25A4F53512}
+	EndGlobalSection
+EndGlobal
