@@ -151,20 +151,22 @@ namespace UEFA.ChampionsLeague.Business.Services
                     }
                     into g
                     orderby
-                        g.Sum(p => (p.HomeTeamScore > p.AwayTeamScore ? 3 : 0)) descending,
+                        g.Sum(p => (p.HomeTeamScore > p.AwayTeamScore ? 1 : 0)) descending,
                         g.Sum(p => p.HomeTeamScore) - g.Sum(p => p.AwayTeamScore) descending
                     select new StandingNavigationDto()
                     {
                         Rank = index++,
                         Team = g.Key.team,
                         PlayedGames = g.Count(),
-                        Win = g.Count(p => (p.HomeTeamScore > p.AwayTeamScore ? (long?)1 : null) != null),
-                        Lose = g.Count(p => (p.AwayTeamScore > p.HomeTeamScore ? (long?)1 : null) != null),
-                        Draw = g.Count(p => (p.HomeTeamScore == p.AwayTeamScore ? (long?)1 : null) != null),
+                        Win = g.Count(p => (p.HomeTeamScore > p.AwayTeamScore ? 1 : 0) != 0),
+                        Lose = g.Count(p => (p.AwayTeamScore > p.HomeTeamScore ? 1 : 0) != 0),
+                        Draw = g.Count(p => (p.HomeTeamScore == p.AwayTeamScore ? 1 : 0) != 0),
                         Goals = g.Sum(p => p.HomeTeamScore),
                         GoalsAgainst = g.Sum(p => p.AwayTeamScore),
                         GoalDifference = (g.Sum(p => p.HomeTeamScore) - g.Sum(p => p.AwayTeamScore)),
-                        Points = g.Sum(p => (p.HomeTeamScore > p.AwayTeamScore ? 3 : 0))
+                        Points = g.Sum(p => (p.HomeTeamScore > p.AwayTeamScore ? 3 : 0)) 
+                                 +
+                                 g.Sum(p => (p.HomeTeamScore == p.AwayTeamScore ? 1 : 0))
                     }).ToList();
         }
         #endregion
